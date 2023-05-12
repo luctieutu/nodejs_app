@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpdateUser</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="test">
+    <form action="/detail/user/:userId" method ="GET">
+      <h1><div><b> Thông tin</b></div></h1>
+        
+        <div>
+            <label > <b>Iduser:</b> </label>
+            <output> <%= dataUser.id %> </output>
+        </div>
+            <div>
+              <label><b>Firsname:</b> </label>
+              <output> <%= dataUser.firstName %> </output>
+            </div>
+            <div>
+              <label><b> Lastname:</b></label>
+              <output> <%= dataUser.lastName %> </output>
+            </div>
+            <div>
+              <label><b> Email:</b></label>
+              <output> <%= dataUser.mail %> </output>
+            </div>
+            <div>
+              <label><b> Address:</b></label>
+              <output> <%= dataUser.address %> </output>
+            </div>
+            
+             
+            
+    </form>
+  </div>
+</body>
+</html>
